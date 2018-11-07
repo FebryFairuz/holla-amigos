@@ -203,11 +203,15 @@
 		}
     
     $(".sw-nml").on("input",function(e){
+	console.log(this)//harusnya inputnya
       var parent = $(this).parents("tr yang ada data-code-pos-anggaran");
+	    console.log(parent)//harusnya tunjukin obect si tr
       var code = parent.data("code-pos-anggaran");
+	    console.log(code) //harusnya tunjukin code pos
       
       var semuatrPos = $("tr[data-post-anggaran='"+code+"']");
-      var smuainput = $(input,smuatrPos);
+	    console.log(smuatrpos)//tampilin array object tr
+      var smuainput = $(input,smuatrPos); // tampilin input
       
       //each smua input untuk jumlahkan
     })
